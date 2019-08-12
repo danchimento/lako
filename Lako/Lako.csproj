@@ -1,0 +1,68 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="package\game.html" />
+    <None Remove="package\game.js" />
+    <None Remove="package\lib\lako\button.js" />
+    <None Remove="package\lib\lako\common.js" />
+    <None Remove="package\lib\lako\eclipse.js" />
+    <None Remove="package\lib\lako\element.js" />
+    <None Remove="package\lib\lako\game.js" />
+    <None Remove="package\lib\lako\image.js" />
+    <None Remove="package\lib\lako\index.js" />
+    <None Remove="package\lib\lako\rectangle.js" />
+    <None Remove="package\lib\lako\text.js" />
+    <None Remove="package\lib\lako\timer.js" />
+    <None Remove="package\mario.png" />
+    <None Remove="package\package.json" />
+    <None Remove="package\start.bat" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="package\game.html" />
+    <EmbeddedResource Include="package\game.js" />
+    <EmbeddedResource Include="package\lib\lako\button.js" />
+    <EmbeddedResource Include="package\lib\lako\common.js" />
+    <EmbeddedResource Include="package\lib\lako\eclipse.js" />
+    <EmbeddedResource Include="package\lib\lako\element.js" />
+    <EmbeddedResource Include="package\lib\lako\game.js" />
+    <EmbeddedResource Include="package\lib\lako\image.js" />
+    <EmbeddedResource Include="package\lib\lako\index.js" />
+    <EmbeddedResource Include="package\lib\lako\rectangle.js" />
+    <EmbeddedResource Include="package\lib\lako\text.js" />
+    <EmbeddedResource Include="package\lib\lako\timer.js" />
+    <EmbeddedResource Include="package\mario.png" />
+    <EmbeddedResource Include="package\package.json" />
+    <EmbeddedResource Include="package\start.bat" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="package.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>package.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="package.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>package.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+</Project>

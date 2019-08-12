@@ -1,0 +1,19 @@
+{
+  "name": "lako",
+  "version": "1.0.0",
+  "description": "A lightweight game engine for learning to write code.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danchimento/lako.git"
+  },
+  "author": "Dan Chimento",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/danchimento/lako/issues"
+  },
+  "homepage": "https://github.com/danchimento/lako#readme"
+}
