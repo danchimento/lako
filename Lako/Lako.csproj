@@ -26,16 +26,16 @@
   <ItemGroup>
     <EmbeddedResource Include="package\game.html" />
     <EmbeddedResource Include="package\game.js" />
-    <EmbeddedResource Include="package\lib\lako\button.js" />
-    <EmbeddedResource Include="package\lib\lako\common.js" />
-    <EmbeddedResource Include="package\lib\lako\eclipse.js" />
-    <EmbeddedResource Include="package\lib\lako\element.js" />
-    <EmbeddedResource Include="package\lib\lako\game.js" />
-    <EmbeddedResource Include="package\lib\lako\image.js" />
-    <EmbeddedResource Include="package\lib\lako\index.js" />
-    <EmbeddedResource Include="package\lib\lako\rectangle.js" />
-    <EmbeddedResource Include="package\lib\lako\text.js" />
-    <EmbeddedResource Include="package\lib\lako\timer.js" />
+    <EmbeddedResource Include="package\lib\button.js" />
+    <EmbeddedResource Include="package\lib\common.js" />
+    <EmbeddedResource Include="package\lib\eclipse.js" />
+    <EmbeddedResource Include="package\lib\element.js" />
+    <EmbeddedResource Include="package\lib\game.js" />
+    <EmbeddedResource Include="package\lib\image.js" />
+    <EmbeddedResource Include="package\lib\index.js" />
+    <EmbeddedResource Include="package\lib\rectangle.js" />
+    <EmbeddedResource Include="package\lib\text.js" />
+    <EmbeddedResource Include="package\lib\timer.js" />
     <EmbeddedResource Include="package\mario.png" />
     <EmbeddedResource Include="package\package.json" />
     <EmbeddedResource Include="package\start.bat" />
@@ -63,6 +63,10 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="package\lib\lako\" />
   </ItemGroup>
 
 </Project>

@@ -1,5 +1,5 @@
 "use strict";
-import game from './lib/lako/index.js';
+import game from './lib/index.js';
 
 var rectangle = game.addRectangle();
 rectangle.left = 100;
