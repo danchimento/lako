@@ -8,16 +8,6 @@
   <ItemGroup>
     <None Remove="package\game.html" />
     <None Remove="package\game.js" />
-    <None Remove="package\lib\lako\button.js" />
-    <None Remove="package\lib\lako\common.js" />
-    <None Remove="package\lib\lako\eclipse.js" />
-    <None Remove="package\lib\lako\element.js" />
-    <None Remove="package\lib\lako\game.js" />
-    <None Remove="package\lib\lako\image.js" />
-    <None Remove="package\lib\lako\index.js" />
-    <None Remove="package\lib\lako\rectangle.js" />
-    <None Remove="package\lib\lako\text.js" />
-    <None Remove="package\lib\lako\timer.js" />
     <None Remove="package\mario.png" />
     <None Remove="package\package.json" />
     <None Remove="package\start.bat" />
@@ -63,10 +53,6 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="package\lib\lako\" />
   </ItemGroup>
 
 </Project>
