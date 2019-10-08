@@ -42,7 +42,7 @@ namespace Lako
             var processStartInfo = new ProcessStartInfo();
             processStartInfo.WorkingDirectory = $@".\\{projectName}";
             processStartInfo.FileName = "cmd.exe";
-            processStartInfo.Arguments = "/C npm install";
+          //  processStartInfo.Arguments = "/C npm install";
             Process proc = Process.Start(processStartInfo);
             proc.WaitForExit();
 
