@@ -5,27 +5,6 @@
     <body>
         
         <script src="../build/lako.bundle.js"></script>
-        <script>
-            var rectangle = Game.addRectangle();
-            rectangle.left = 100;
-            rectangle.top = 100;
-            rectangle.backgroundColor = "red";
-
-            var button = Game.addButton();
-            button.click = function() {
-                if (timer.running) {
-                    timer.stop();
-                } else {
-                    timer.start();
-                }
-            }
-
-            var timer = Game.addTimer();
-            timer.delay = 32;
-            timer.repeat = true;
-            timer.tick = function() {
-                rectangle.left += 10;
-            } 
-        </script>
+        <script src="game.js"></script>
     </body>
 </html>

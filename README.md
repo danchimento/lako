@@ -11,12 +11,25 @@ A lightweight game engine for learning to write code.
 3. Add a reference to the lako.build.js file in your HTML file at the bottom of the ```<body>``` tag and before all your javascript.
 4. You're ready to start using the ```Game``` object!
 
+index.html
+```
+<html>
+    <head>
+        <title>Your game title</title>
+    </head>
+    <body>
+        <script src="lako.bundle.js"></script>
+        <script src="game.js"></script>
+    </body>
+</html>
+```
+
 ## Adding game elements
 
-The following code can be used to add a rectangle to the game.
+The following code can be used to add a rectangle to the Game.
 
 ```
-var myRectangle = game.addRectangle();
+var myRectangle = Game.addRectangle();
 ```
 
 Once the rectangle exists you can change the properties of the rectangle.
@@ -30,8 +43,8 @@ myRectangle.backgroundColor = "green";
 ## Shapes
 
 ```
-var myRectangle = game.addRectangle();
-var myCircle = game.addCircle();
+var myRectangle = Game.addRectangle();
+var myCircle = Game.addCircle();
 
 myRectangle.width = 100;
 myRectangle.height = 200;
@@ -40,7 +53,7 @@ myRectangle.backgroundColor = "brown";
 
 ## Text
 ```
-var label = game.addLabel();
+var label = Game.addLabel();
 label.text = "Hello World!";
 label.fontSize = 15;
 label.textColor = "red";
@@ -48,14 +61,14 @@ label.textColor = "red";
 
 ## Image
 ```
-var marioImage = game.addImage();
+var marioImage = Game.addImage();
 marioImage.source = "mario.png"
 ```
 
 ## Button
 ```
-var rectangle = game.addRectangle();
-var moveRightButton = game.addButton();
+var rectangle = Game.addRectangle();
+var moveRightButton = Game.addButton();
 
 moveRightButton.click = function() {
     rectangle.left = rectangle.left + 5;
@@ -65,22 +78,22 @@ moveRightButton.click = function() {
 ## Keyboard
 https://keycode.info/
 ```
-var circle = game.addCircle();
+var circle = Game.addCircle();
 
 function downArrowPress() {
     circle.top = circle.top + 10;
 }
 
-game.keyDown(40, downArrowPress);
+Game.keyDown(40, downArrowPress);
 ```
 
 ## Timer
 ```
-var gameOverText = game.addText();
+var gameOverText = Game.addText();
 gameOverText.text = "Game Over";
 gameOverText.visible = false;
 
-var timer = game.addTimer();
+var timer = Game.addTimer();
 timer.delay = 10000;
 timer.repeat = false;
 timer.tick = function() {
