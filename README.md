@@ -6,34 +6,10 @@ A lightweight game engine for learning to write code.
 
 # Getting Started
 
-1. Install NodeJS and npm https://nodejs.org/en/ (use the link labeled "Recommended for most users")
-
-2. Download the "Lako" repository from https://github.com/danchimento/lako (use the "Clone or Download" button and choose "Download ZIP")
-
-3. Copy the "Lako.exe" file from the build directory to wherever you want to generate projects. ("C:\projects" is recommended)
-
-4. Run the "Lako.exe" file.
-
-5. Enter any name for the project and press "Enter". A new directory will be created next to the Lako.exe file with your project files.
-
-6. Open the directory that was created in step 5. 
-
-7. Run the "Start.exe" application.
-
-# Building the game
-
-To make changes to the game, open the "game.js" file. 
-
-The first two lines should not be changed:
-```
-"use strict";
-import game from './lib/index.js';
-```
-
-- "use strict" enforces correct javascript syntax. While this isn't necessary for the application to run it helps reinforce good programming habits.
-
-- The "import" adds helpful code that makes game development easier.
-
+1. Download the Github repo
+2. Open the build/lako.build.js file into your project directory
+3. Add a reference to the lako.build.js file in your HTML file at the bottom of the ```<body>``` tag and before all your javascript.
+4. You're ready to start using the ```Game``` object!
 
 ## Adding game elements
 

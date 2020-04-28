@@ -1,3 +1,3 @@
 import Game from './game.js';
 
-window.game = new Game();
+window.Game = new Game();

@@ -5,17 +5,17 @@ export default class Button extends Element {
     constructor() {
         super("button");
 
-        this.elem.style.width = "100px";
-        this.elem.style.height = "25px";
-        this.elem.style.backgroundColor = "#aaa";
-        this.elem.innerText = "Button"
+        this._elem.style.width = "100px";
+        this._elem.style.height = "25px";
+        this._elem.style.backgroundColor = "#aaa";
+        this._elem.innerText = "Button"
     }
 
     set click(value) {
-        this.elem.onclick = value;
+        this._elem.onclick = value;
     }
 
     set text(value) {
-        this.elem.innerText = value;
+        this._elem.innerText = value;
     }
 }
