@@ -44,7 +44,7 @@ myRectangle.backgroundColor = "green";
 
 ```
 var myRectangle = Game.addRectangle();
-var myCircle = Game.addCircle();
+var myCircle = Game.addEllipse();
 
 myRectangle.width = 100;
 myRectangle.height = 200;
@@ -53,7 +53,7 @@ myRectangle.backgroundColor = "brown";
 
 ## Text
 ```
-var label = Game.addLabel();
+var label = Game.addText();
 label.text = "Hello World!";
 label.fontSize = 15;
 label.textColor = "red";
@@ -78,7 +78,7 @@ moveRightButton.click = function() {
 ## Keyboard
 https://keycode.info/
 ```
-var circle = Game.addCircle();
+var circle = Game.addEllipse();
 
 function downArrowPress() {
     circle.top = circle.top + 10;

@@ -1,6 +1,6 @@
 import Rectangle from './rectangle.js';
 import Button from './button.js';
-import Eclipse from './eclipse.js';
+import Ellipse from './ellipse.js';
 import Timer from './timer.js';
 import Image from './image.js';
 import Text from './text.js';
@@ -64,8 +64,8 @@ export default class Game {
         return button;
     }
     
-    addCircle = () => {
-        let circle = new Eclipse();
+    addElipse = () => {
+        let circle = new Ellipse();
         document.body.append(circle._elem);
         return circle;
     }

@@ -4,7 +4,7 @@
   "description": "A lightweight game engine for learning to write code.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack --watch",
     "build": "webpack"
   },
   "repository": {

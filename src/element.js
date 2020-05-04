@@ -11,6 +11,10 @@ export default class Element {
         this._elem.style.borderWidth = px(1);
         this._elem.style.borderStyle = "solid";
         this._elem.style.borderColor = "transparent";
+        this._elem.style.width = "50px";
+        this._elem.style.height = "50px";
+        this._elem.style.left = "25px";
+        this._elem.style.top = "25px";
     }
 
     get left() { return val(this._elem.style.left); }
@@ -57,4 +61,8 @@ export default class Element {
 
     set fontSize(value) { this._elem.style.fontSize = px(value); }
     set textColor(value) { this._elem.style.color = value; }
+
+    set click(value) {
+        this._elem.onclick = value;
+    }
 }

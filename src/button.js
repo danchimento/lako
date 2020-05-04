@@ -11,10 +11,6 @@ export default class Button extends Element {
         this._elem.innerText = "Button"
     }
 
-    set click(value) {
-        this._elem.onclick = value;
-    }
-
     set text(value) {
         this._elem.innerText = value;
     }
