@@ -64,7 +64,7 @@ export default class Game {
         return button;
     }
     
-    addElipse = () => {
+    addEllipse = () => {
         let circle = new Ellipse();
         document.body.append(circle._elem);
         return circle;
