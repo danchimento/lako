@@ -7,8 +7,8 @@ A lightweight game engine for learning to write code.
 # Getting Started
 
 1. Download the Github repo
-2. Open the build/lako.build.js file into your project directory
-3. Add a reference to the lako.build.js file in your HTML file at the bottom of the ```<body>``` tag and before all your javascript.
+2. Copy the build/lako.bundle.js file into your project directory
+3. Add a reference to the lako.bundle.js file in your HTML file at the bottom of the ```<body>``` tag and before all your javascript.
 4. You're ready to start using the ```Game``` object!
 
 index.html
@@ -80,11 +80,9 @@ https://keycode.info/
 ```
 var circle = Game.addEllipse();
 
-function downArrowPress() {
+Game.keyDown(40, function() {
     circle.top = circle.top + 10;
-}
-
-Game.keyDown(40, downArrowPress);
+});
 ```
 
 ## Timer
