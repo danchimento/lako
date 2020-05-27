@@ -85,6 +85,16 @@ Game.keyDown(40, function() {
 });
 ```
 
+## Mouse Click
+```
+var rectangle = Game.addRectangle();
+rectangle.backgroundColor = "red";
+
+rectangle.click = function() {
+    rectangle.backgroundColor = "blue";
+}
+```
+
 ## Timer
 ```
 var gameOverText = Game.addText();
