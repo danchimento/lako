@@ -4,6 +4,7 @@ import Ellipse from './ellipse.js';
 import Timer from './timer.js';
 import Image from './image.js';
 import Text from './text.js';
+import { val } from './common.js';
 
 export default class Game {
 
@@ -18,6 +19,7 @@ export default class Game {
         document.addEventListener('keyup', this._handleKeyUp);
         document.title = "New Game";
         document.body.style.backgroundColor = "#ddd";
+        document.body.style.overflow = "hidden";
     }
 
     set color(value) {
@@ -27,6 +29,9 @@ export default class Game {
     set name(value) {
         document.title = value;
     }
+
+    get width() { return val(window.innerWidth); }
+    get height() { return val(window.innerHeight); }
 
     _handleKeyDown(e) {
         let event = this._keyDownEvents[e.keyCode];
@@ -50,6 +55,10 @@ export default class Game {
 
     keyUp(key, event) {
         this._keyUpEvents[key] = event;
+    }
+
+    remove = (elem) => {
+        elem._elem.remove();
     }
 
     addRectangle = () => {
