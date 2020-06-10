@@ -111,6 +111,22 @@ timer.tick = function() {
 timer.start();
 ```
 
+## Sound
+```
+var sound = Game.addSound();
+sound.source = "https://www.w3schools.com/html/horse.ogg";
+sound.loop = true;
+
+Game.keyDown(32, function() {
+    if (sound.playing) {
+        sound.pause();
+        sound.reset();
+    } else {
+        sound.play();
+    }
+});
+```
+
 
 # Element Properties 
 

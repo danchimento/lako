@@ -4,6 +4,7 @@ import Ellipse from './ellipse.js';
 import Timer from './timer.js';
 import Image from './image.js';
 import Text from './text.js';
+import Sound from './sound.js';
 import { val } from './common.js';
 
 export default class Game {
@@ -22,7 +23,7 @@ export default class Game {
         document.body.style.overflow = "hidden";
     }
 
-    set color(value) {
+    set backgroundColor(value) {
         document.body.style.backgroundColor = value;
     }
 
@@ -91,6 +92,12 @@ export default class Game {
 
     addText = () => {
         let text = new Text();
+        document.body.append(text._elem);
+        return text;
+    }
+
+    addSound = () => {
+        let text = new Sound();
         document.body.append(text._elem);
         return text;
     }
