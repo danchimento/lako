@@ -6,10 +6,12 @@ A lightweight game engine for learning to write code.
 
 # Getting Started
 
-1. Download the Github repo
-2. Copy the build/lako.bundle.js file into your project directory
-3. Add a reference to the lako.bundle.js file in your HTML file at the bottom of the ```<body>``` tag and before all your javascript.
-4. You're ready to start using the ```Game``` object!
+1. Download the repo using the big green "Clone or Download" button above and choose "Download ZIP".
+2. Once the download completes, unzip the folder (right click and choose Extract on Windows, or just double click on Mac).
+3. Open the "Examples" directory, then open the "Basic" directory and start editing the "game.js" file. This is where you will write game code.
+4. To run the game, double click the "index.html" file to open it in a browser.
+5. If you want to make another game, just copy and paste the entire "Basic" directory. You now have a new game.
+6. Use the documentation below to modify your game. You can also open up the "Flappy" example for some more advanced code samples.
 
 index.html
 ```
