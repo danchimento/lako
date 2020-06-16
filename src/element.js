@@ -63,6 +63,8 @@ export default class Element {
     set textColor(value) { this._elem.style.color = value; }
 
     set click(value) {
-        this._elem.onclick = value;
+        this._elem.onclick = (e) => {
+            value(e);
+        };
     }
 }
