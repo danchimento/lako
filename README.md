@@ -129,6 +129,18 @@ Game.keyDown(32, function() {
 });
 ```
 
+## Check for collisions
+```
+var box1 = Game.addRectangle();
+var box2 = Game.addRectangle();
+
+if (Game.overlaps(box1, box2)) {
+    console.log("The boxes overlapped!");
+}
+
+```
+
+
 
 # Element Properties 
 

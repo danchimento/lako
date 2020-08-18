@@ -12,12 +12,18 @@ export default class Game {
     constructor() {
         this._keyDownEvents = [];
         this._keyUpEvents = [];
+        this._mouseDownEvent = () => {};
+        this._mouseUpEvent = () => {};
         this._handleKeyDown = this._handleKeyDown.bind(this);
         this._handleKeyUp = this._handleKeyUp.bind(this);
-        
+        this._mouseDownEvent = this._mouseDownEvent.bind(this);
+        this._mouseUpEvent = this._mouseUpEvent.bind(this);
+        this._mouseDown = false;
         
         document.addEventListener('keydown', this._handleKeyDown);
         document.addEventListener('keyup', this._handleKeyUp);
+        document.addEventListener('mousedown', this._handleMouseDownEvent);
+        document.addEventListener('mouseup', this._handleMouseUpEvent);
         document.title = "New Game";
         document.body.style.backgroundColor = "#ddd";
         document.body.style.overflow = "hidden";
@@ -33,6 +39,8 @@ export default class Game {
 
     get width() { return val(window.innerWidth); }
     get height() { return val(window.innerHeight); }
+
+    get isMouseDown() { return this._mouseDown; }
 
     _handleKeyDown(e) {
         let event = this._keyDownEvents[e.keyCode];
@@ -56,6 +64,25 @@ export default class Game {
 
     keyUp(key, event) {
         this._keyUpEvents[key] = event;
+    }
+
+
+    _handleMouseDownEvent = (e) => {
+        this._mouseDown = true;
+        this._mouseDownEvent(e);
+    }
+
+    _handleMouseUpEvent = (e) => {
+        this._mouseDown = false;
+        this._mouseUpEvent(e);
+    }
+
+    mouseDown(event) {
+        this._mouseDownEvent = event;
+    }
+
+    mouseUp(event) {
+        this._mouseUpEvent = event;
     }
 
     remove = (elem) => {
@@ -100,5 +127,12 @@ export default class Game {
         let text = new Sound();
         document.body.append(text._elem);
         return text;
+    }
+
+    overlaps = (element1, element2) => {
+        return element1.top <= element2.bottom 
+            && element1.bottom >= element2.top
+            && element1.right >= element2.left 
+            && element1.left <= element2.right;
     }
 }
